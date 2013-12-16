@@ -159,7 +159,7 @@ class GrailsMelodyGrailsPlugin {
                      }
                   }
 					}
-					if(!found && delegate."${name}"){
+					if(!found && delegate.hasProperty(name)){
 						def property = delegate."${name}"
 						if(property instanceof Closure){
 							found = true
