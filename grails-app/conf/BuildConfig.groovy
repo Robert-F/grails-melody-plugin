@@ -1,5 +1,6 @@
 grails.project.work.dir = 'target'
 
+grails.project.dependency.resolver = "maven"
 grails.project.dependency.resolution = {
 
     inherits 'global'
@@ -18,7 +19,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        build ':release:2.2.1', ':rest-client-builder:1.0.3', {
+        build ":release:3.1.1", {
             export = false
         }
     }
